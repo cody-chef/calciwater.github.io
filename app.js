@@ -29,6 +29,8 @@ smallCups.forEach((cup, idx) => {
         }
         startInterval();
         h.value = 2;
+        m.value = 0;
+        s.value = 0;
         highlightCups(idx)
     })
 })
