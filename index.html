@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Drink Water</title>
+  </head>
+  <body>
+
+    <h2 class="reminder">Reminder to Drink next glass of water</h2>
+
+    <!-- start of timer -->
+    <div id="container">
+      
+      <input id="hour" type="number" max="99" min="0" value="0" class="time"><p id="p1" class="semicolon">:</p> <input id="minute" type="number" max="60" min="0" value="0" class="time"><p id="p2" class="semicolon">:</p><input id="sec" type="number" max="60" min="0" value="0" class="time">
+      
+      <button id="reset" class="btn">Reset</button>
+  </div>
+    <!-- end of timer -->
+
+    <h1>Drink Water</h1>
+    <h3>Goal: 2 Liters</h3>
+
+    <div class="cup">
+      <div class="remained" id="remained">
+        <span id="liters"></span>
+        <small>Remained</small>
+      </div>
+
+      <div class="percentage" id="percentage"></div>
+    </div>
+
+    <p class="text">Select how many glasses of water that you have drank</p>
+
+    <div class="cups">
+      <div class="cup cup-small">250 ml</div>
+      <div class="cup cup-small">250 ml</div>
+      <div class="cup cup-small">250 ml</div>
+      <div class="cup cup-small">250 ml</div>
+      <div class="cup cup-small">250 ml</div>
+      <div class="cup cup-small">250 ml</div>
+      <div class="cup cup-small">250 ml</div>
+      <div class="cup cup-small">250 ml</div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
