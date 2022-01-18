@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Drink Water</title>
+  </head>
+  <body>
+    
+    <head>
+  <meta name="description" content="Daily Water Calculator">
+  <meta name="keywords" content="Water Calculator, Water Consumption, Proper Hydration">
+  <meta charset="utf-8">
+	<title>Water Consumption Calculator</title>
+		<style>
+@media(min-width: 768px) {	
+  .container-1 {
+    display: flex; 
+    flex-direction: column;
+}
+  .container-2 {
+    display: flex; 
+    flex-direction: row;
+  }
+}
+body {
+  background-image: url("clean-clear-cold-1430.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+.box-1 {
+  flex: 2; 
+}
+.box-2 {
+  flex: 2; 
+}
+.box-3 {
+  flex: 1;
+}
+h1, legend {
+  margin-left: 10px;
+  letter-spacing: 4px;
+  font-weight: 600;
+}
+p#first, p#second {
+  max-width: 575px;
+  letter-spacing: 4px;
+  margin-left: 30px;
+}
+p, label {
+  font-size: 20px;
+  line-height: 25px
+}
+legend {
+  font-size: 25px;
+  margin-left: 0;
+  letter-spacing: 4px;
+  font-weight: 600;
+}	
+button#calculate, button#clear {
+  background-color: lightblue;
+  font-size: 16px;
+}
+button#calculate {
+  margin: 10px 0 7px 0;
+}
+button#clear {
+  margin-left: 10px;
+}
+fieldset {
+  max-width: 390px;
+  height: 350px;
+  left-margin: 50px;
+  top-margin: 0px;
+  padding-left: 20px;
+  background-color: silver;
+}
+label, input {
+  margin-bottom: 10px
+}
+.emphasis {
+  font-style: italic;				
+}
+</style>
+</head>
+
+    
+
+    <h1>Drink Water</h1>
+    <h3>Goal: 2 Liters</h3>
+
+    <h2 class="reminder">Reminder to Drink next glass of water</h2>
+
+    <!-- start of timer -->
+    <div id="container">
+      
+      <input id="hour" type="number" max="99" min="0" value="0" class="time"><p id="p1" class="semicolon">:</p> <input id="minute" type="number" max="60" min="0" value="0" class="time"><p id="p2" class="semicolon">:</p><input id="sec" type="number" max="60" min="0" value="0" class="time">
+      
+      <button id="reset" class="btn">Reset</button>
+  </div>
+    <!-- end of timer -->
+
+    <div class="cup">
+      <div class="remained" id="remained">
+        <span id="liters"></span>
+        <small>Remained</small>
+      </div>
+
+      <div class="percentage" id="percentage"></div>
+    </div>
+
+    <p class="text">Select how many glasses of water that you have drank</p>
+
+    <div class="cups">
+      <div class="cup cup-small">250 ml</div>
+      <div class="cup cup-small">250 ml</div>
+      <div class="cup cup-small">250 ml</div>
+      <div class="cup cup-small">250 ml</div>
+      <div class="cup cup-small">250 ml</div>
+      <div class="cup cup-small">250 ml</div>
+      <div class="cup cup-small">250 ml</div>
+      <div class="cup cup-small">250 ml</div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
